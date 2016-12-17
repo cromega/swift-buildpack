@@ -104,6 +104,7 @@ if File.exist? cache_path
   end
 end
 
+`ls -la`
 `curl -s #{translated_uri} -o #{file_location}`
 generated_md5 = Digest::MD5.file(file_location).hexdigest
 
@@ -118,6 +119,7 @@ else
   if dependency_md5 == generated_md5
     exit 0
   else
+    STDERR.puts "HEHEHEHEHE"
     FileUtils.rm(file_location)
     exit 3
   end
