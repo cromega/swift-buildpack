@@ -40,7 +40,7 @@ dependencies:
   - name: clang
     version: 3.8.0
     uri: http://llvm.org/releases/3.8.0/clang+llvm-3.8.0-x86_64-linux-gnu-ubuntu-14.04.tar.xz
-    md5: 890274421f4480ce228ed3eab1fd3c73
+    md5: 9581edf12c9cb39e51d09ebe4e311101
     cf_stacks:
       - cflinuxfs2
 
